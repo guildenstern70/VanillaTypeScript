@@ -4,13 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Vanilla TypeScript</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   </head>
   <body>
-    <p>Counter: <span id="count-value">0</span></p>
-    <button id="increment-button"> + </button>
-    <button id="decrement-button"> - </button>
+    <main class="container">
+      <h3 style="margin-bottom: 50px">The TypeScript Vanilla Project</h3>
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title"><b>Counter</b></span>
+          <p>The counter is at <span id="count-value">0</span></p>
+        </div>
+        <div class="card-action">
+          <button id="btn-add" class="waves-effect waves-light btn-small"><i class="material-icons left">add</i></button>
+          <button id="btn-remove" class="waves-effect waves-light btn-small"><i class="material-icons left">remove</i></button>
+        </div>
+      </div>
+    </main>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="/static/bundle/script.js"></script>
   </body>
 </html>
