@@ -1,24 +1,24 @@
 {
   "name": "vanilla-typescript",
-  "version": "0.0.1",
-  "description": "A vanilla TypeScript web application",
-  "main": "index.js",
+  "version": "0.0.2",
+  "description": "A vanilla TypeScript web application powered by Bun",
+  "main": "./public/index.html",
   "scripts": {
-    "start": "npm run build && npm run server",
+    "start": "bun run build && bun run server",
     "server": "http-server public/ -p 8080",
-    "message": "node -e \"console.log('Open http://localhost:8080 to browse application');\"",
-    "build": "webpack"
+    "build": "bun build ./src/index.ts --minify --outdir ./public/static/bundle"
   },
   "author": "Alessio Saltarin <alessiosaltarin@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ts-loader": "^9.4.3",
-    "typescript": "^5.1.3",
-    "webpack": "^5.86.0",
-    "webpack-cli": "^5.1.4"
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0",
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }

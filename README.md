@@ -1,17 +1,20 @@
 # Vanilla TypeScript
 
 This project is based on:
-https://tsegsxaviers.hashnode.dev/setting-up-a-vanilla-typescript-project-the-right-way
+[Vanilla TypeScript Project](https://tsegsxaviers.hashnode.dev/setting-up-a-vanilla-typescript-project-the-right-way)
+
+We use "Bun" to build and run the code.
+[Bun](https://bun.sh/docs/installation)
 
 
 ## How to setup
 
 Run
 
-    npm install
+    bun install
 
 
 ## How to run
 
-    npm run start
+    bun run start
 
